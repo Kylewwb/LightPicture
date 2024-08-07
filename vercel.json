@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.php?s=/\$1",
+      "has": [
+        {
+          "type": "file",
+          "condition": "exists",
+          "value": "\$1"
+        }
+      ],
+      "continue": false
+    }
+  ]
+}
