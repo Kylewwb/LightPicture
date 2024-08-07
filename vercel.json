@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/index.php?s=/\$1"
+      "destination": "/index"
     }
   ]
 }
