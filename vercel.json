@@ -1,21 +1,18 @@
 {
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.php/\\\$1", // 转义 \$1
-      "has": [
-        {
-          "type": "file",
-          "condition": "exists",
-          "value": "\\\$1" // 转义 \$1
-        },
-        {
-          "type": "directory",
-          "condition": "exists",
-          "value": "\\\$1" // 转义 \$1
-        }
-      ],
-      "continue": false
-    }
-  ]
+	"rewrites": [{
+		"source": "/(.*)",
+		"destination": "/index.php/\\$1",
+		"has": [{
+				"type": "file",
+				"condition": "exists",
+				"value": "\\$1"
+			},
+			{
+				"type": "directory",
+				"condition": "exists",
+				"value": "\\$1"
+			}
+		],
+		"continue": false
+	}]
 }
