@@ -1,15 +1,5 @@
 {
 	"rewrites": [{
 		"source": "/(.*)",
-		"destination": "/index.php/\\$1",
-		"has": [{
-				"type": "file",
-				"value": "\\$1"
-			},
-			{
-				"type": "directory",
-				"value": "\\$1"
-			}
-		]
-	}]
+		"destination": "/index.php/"
 }
